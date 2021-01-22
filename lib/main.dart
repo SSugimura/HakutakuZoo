@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter/rendering.dart';
-//import 'package:flutter/foundation.dart';
 import 'dart:io';
-//import 'package:image_picker/image_picker.dart';
+import 'package:image_picker/image_picker.dart';
 
 //アプリ実行したらMyAppクラスを読み込む
 void main() {
@@ -34,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-//  File _image;                     //ライブラリ
+  File _image;                     //ライブラリ
 //  final picker = ImagePicker();
 
   final _locationMap = {
@@ -230,15 +228,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
 
-//                    Padding(
-//                      padding: const EdgeInsets.all(8.0),
-//                      child: Container(
-//                          width: 300,
-//                          child: _image == null
-//                              ? Text('No image selected.')
-//                              : Image.file(_image)
-//                      ),
-//                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                          width: 300,
+                          child: _image == null
+                              ? Text('No image selected.')
+                              : Image.file(_image)
+                      ),
+                    ),
 
                     TextField(
                       decoration: InputDecoration(
