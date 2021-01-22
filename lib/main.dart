@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   File _image;                     //ライブラリ
-//  final picker = ImagePicker();
+ final picker = ImagePicker();
 
   final _locationMap = {
     '0': '哺乳類',
@@ -46,11 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
   var _selectedLocation = '0';
 
   Future getImageFromGallery() async {
-//    final pickedFile = await picker.getImage(source: ImageSource.gallery);
-//
-//    setState(() {
-//      _image = File(pickedFile.path);
-//    });
+   final pickedFile = await picker.getImage(source: ImageSource.gallery);
+
+   setState(() {
+     _image = File(pickedFile.path);
+   });
   }
 
   bool _flag = false;
