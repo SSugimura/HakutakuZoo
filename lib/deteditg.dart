@@ -3,10 +3,10 @@ import 'dart:async';
 
 void main() {
 //  debugPaintSizeEnabled = true;
-  runApp(MyApp());
+  runApp(DEditApp());
 }
 
-class MyApp extends StatelessWidget {
+class DEditApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

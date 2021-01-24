@@ -2,12 +2,21 @@ import 'package:flutter/material.dart';
 //import 'package:flutter/rendering.dart';
 //import 'package:flutter/foundation.dart';
 import 'dart:io';
+import 'package:hakutakuzoo/detailg.dart';
+import 'package:hakutakuzoo/deteditg.dart';
 //import 'package:image_picker/image_picker.dart';
 
 //アプリ実行したらMyAppクラスを読み込む
 void main() {
 //  debugPaintSizeEnabled = true;
+
+//画面遷移実装で問題発生したので以下のコードを切り替えて作業してください(こんなんしなくてもＩＤＥからできるけど)
+  //main.dartが走る
   runApp(MyApp());
+  //detailg.dart
+  // runApp(DetailApp());
+  //detedit.dart
+  // runApp(DEditApp());
 }
 
 class MyApp extends StatelessWidget {
