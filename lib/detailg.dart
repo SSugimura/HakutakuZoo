@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 void main() {
 //  debugPaintSizeEnabled = true;
-  runApp(MyApp());
+  runApp(DetailApp());
 }
 
-class MyApp extends StatelessWidget {
+class DetailApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -108,7 +108,7 @@ class _DetailPageState extends State<DetailPage> {
 
                       TextField(
                         decoration: InputDecoration(
-                          hintText: ("書いてね"),
+                          hintText: ("発見時の状態など、詳細なテキストが書かれている"),
                           border: new OutlineInputBorder(
                             borderRadius: const BorderRadius.all(
                               const Radius.circular(0.0),
@@ -131,15 +131,15 @@ class _DetailPageState extends State<DetailPage> {
                           fontSize: 20.0,
                         ),
                       ),
-
-                      ListView(
-                        children: <Widget>[
-                          ListTile(
-                            title: Text("＃カブトムシ"),
-                            leading: Icon(Icons.mood_rounded),
-                          ),
-                        ],
-                      ),
+//このコードバグにつき一時除去（上のもしかしてもキモかったら消す）
+                      // ListView(
+                      //   children: <Widget>[
+                      //     ListTile(
+                      //       title: Text("＃カブトムシ"),
+                      //       leading: Icon(Icons.mood_rounded),
+                      //     ),
+                      //   ],
+                      // ),
 
                     ],
                   ),
